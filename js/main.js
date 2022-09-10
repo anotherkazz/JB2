@@ -4,18 +4,24 @@
 
 {
 
+  // const vue = Vue.createApp({
+  //   data: () => {
+  //     return {
+  //       message: 'Hello Vue.js!'
+  //     }
+  //   }
+  // })
+  // vue.mount('#basic-event')
+
   const vue = Vue.createApp({
-    data: () => {
+    data: function() {
       return {
-        counter: false,
-        isActive: true,
-        items: [{ message: 'Foo' ,isShow: true}, { message: 'Bar' , isShow: true}],
-        // オブジェクト　２つ　properties　２つ
-        message: ''
+        message: 'Hello Vue.js!'
       }
     }
   })
   vue.mount('#basic-event')
+
 
 // thisは利用できない
 
@@ -26,6 +32,8 @@
   //     }
   //   }
   // }).mount('#basic-event')
+  // メソッドチェーン　こういう書き方もある。関数式であるかどうかは関係ない
 ////
 }
 
+// リアクティブとは、すべての要素に対して反応的に作成すること

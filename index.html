@@ -11,25 +11,8 @@
 </head>
 <body>
   <div id="basic-event">
-
-    <h1 v-if="counter">Vue is awesome!</h1>
-    <h1 v-else>Oh no 😢</h1>
-
-    <div v-bind:class="{ active: isActive }">文字が赤くなります</div>
-    <div :class="{ active: isActive }">文字が赤くなります</div>
-
-    <ul id="array-rendering" class="demo">
-      <li v-for="item in items"  :key="item.message">
-        <p v-if="item.isShow">
-
-          {{ item.message }}
-        </p>
-      </li>
-    </ul>
-
-    <input v-model="message" placeholder="edit me" />
-    <!-- セルフクロージングタグ　/ -->
-    <p>Message is: {{ message }}</p>
+    <p>{{ message }}</p>
+    <p>{{ message2 }}</p>
 
   </div>
 
