@@ -16,7 +16,17 @@
   const vue = Vue.createApp({
     data: function() {
       return {
-        message: 'Hello Vue.js!'
+        message: 'Hello Vue.js!'  ,
+        // ,区切りで複数のプロパティーが使える
+        count: 99,
+        // オブジェクトも入れられる
+        // オブジェクトはプロパティの集合です。プロパティとは名前（キー）と値（バリュー）が対になったものです。
+        user: {
+          lastName: 'Nakamura',
+          firstName: 'Yuta',
+          prefecture: 'Tokyo'
+        },
+        colors: ['Red', 'Green', 'Blue']
       }
     }
   })
