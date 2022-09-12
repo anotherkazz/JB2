@@ -26,7 +26,7 @@
 
   const vue = Vue.createApp({
     data: () =>  ({
-      message: 'Hello Vue.js'
+      toggle: true
       
     })
   })
