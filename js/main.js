@@ -26,7 +26,7 @@
 
   const vue = Vue.createApp({
     data: () =>  ({
-      toggle: true
+      colors: ['Red', 'Green', 'Bkue']
       
     })
   })

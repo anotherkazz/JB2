@@ -11,11 +11,13 @@
 </head>
 <body>
   <div id="basic-event">
-    <p v-if="toggle">Hello</p>
+    <ol>
+      <li v-for="color in colors">{{ color }} </li>
+    </ol>
 
   </div>
-  <!-- value 属性にマスタッシュ構文は使えない -->
-
+  <!-- <li>{{ color >></li>> -->
+    <!-- DOM <li>Red</li> 1回目 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
 </body>
