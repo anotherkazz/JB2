@@ -11,13 +11,10 @@
 </head>
 <body>
   <div id="basic-event">
-    <p>{{ message }}</p>
-    <p>{{ count }}</p>
-    <p>{{ user.prefecture }}</p>
-    <p>{{ colors[1] }}</p>
+    <input type="text" v-bind:value="message">
 
   </div>
-  <!-- データオプションにプロパティーだけでなくオブジェクトや配列要素を設定する方法 -->
+  <!-- value 属性にマスタッシュ構文は使えない -->
 
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
