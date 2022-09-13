@@ -25,10 +25,18 @@
   // vue.mount('#basic-event')
 
   const vue = Vue.createApp({
-    data: () =>  ({
-      colors: ['Red', 'Green', 'Bkue']
-      
-    })
+    data: () => ({
+      now: '-'
+    }),
+    methods: {
+      onClick: function() {
+        // console.log('onClick!')
+        this.now = new Date().toLocaleString()
+        console.log(this)
+
+
+      }
+    }
   })
   vue.mount('#basic-event')
 
