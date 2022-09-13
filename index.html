@@ -11,9 +11,16 @@
 </head>
 <body>
   <div id="basic-event">
-    <ol>
-      <li v-for="color in colors">{{ color }} </li>
-    </ol>
+    <ul>
+      <li v-for="(value, key) in user">
+        {{ key }}: {{ value }}
+      </li>
+    </ul>
+    <!-- <ul>
+      <li v-for="value in user">
+        {{ value }}
+      </li>
+    </ul> -->
 
   </div>
   <!-- <li>{{ color >></li>> -->
