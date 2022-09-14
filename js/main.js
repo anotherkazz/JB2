@@ -32,6 +32,9 @@
     }),
     
   })
+  vue.component('hello-component', {
+    template: '<p>Hello!</p>'
+  })
   vue.mount('#basic-event')
 
   // アロー関数に()はいるのか？
