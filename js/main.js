@@ -24,19 +24,13 @@
   // })
   // vue.mount('#basic-event')
 
+  // 双方向データバインディング
+
   const vue = Vue.createApp({
     data: () => ({
-      now: '-'
+      message: 'Hello Vue.js'
     }),
-    methods: {
-      onClick: function() {
-        // console.log('onClick!')
-        this.now = new Date().toLocaleString()
-        console.log(this)
-
-
-      }
-    }
+    
   })
   vue.mount('#basic-event')
 
