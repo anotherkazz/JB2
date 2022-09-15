@@ -16,12 +16,17 @@
 
   const vue = Vue.createApp({
     data: () => ({
-   
+      newItem: '',
+      todos: []
     }),
     // ボダンが押されたときのイベントハンドラ　メソッド
-    methods:　{
+    methods: {
       addItem: function(event) {
       console.log('Clicked!')
+      let todo = {
+        item: this.newItem
+      }
+      this.todos.push(todo)
     }
   }
   })

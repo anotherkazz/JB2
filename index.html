@@ -20,13 +20,14 @@
     <h2>TODO List</h2>
     <form v-on:submit.prevent>
       <!-- リロードを防ぐ -->
-      <input type="text">
+      <input type="text" v-model="newItem">
+      <!-- inputで入れて、v-modelでデータバインディングする -->
       <!-- text 入力欄 -->
       <button v-on:click="addItem">Add</button>
       <!-- Addボタン -->
       <!-- ボタンがクリックされたときに呼び出すメソッド名を記述する -->
     </form>
-
+    <pre>{{ $data }}</pre>
   </div>
 
   <script src="https://unpkg.com/vue@3.1.5"></script>
