@@ -8,19 +8,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue.js 3</title>
   <link rel="stylesheet" href="css/main.css">
+  <!-- rel属性 【relationship attribute】
+  rel属性とは、HTMLの要素（タグ）の中で設定することができる属性（attribute）の一つで、外部の他の資源との関連性（relationship）を示すもの。a要素やlink要素などで用いられる。 -->
+
+  <!-- <link> は HTML の要素で、現在の文書と外部のリソースとの関係を指定します。 この要素はスタイルシートへのリンクに最もよく使用されますが、サイトのアイコン（"favicon" スタイルのアイコンと、モバイル端末のホーム画面やアプリのアイコンの両方）の確立や、その他のことにも使用されます。 -->
+
+
 </head>
 <body>
   <div id="basic-event">
-    <!-- コンポーネントの利用-->
-    <hello-component></hello-component>
-    <hello-component></hello-component>
-    <hello-component></hello-component>
-
+    <h2>TODO List</h2>
+    <form v-on:submit.prevent>
+      <!-- リロードを防ぐ -->
+      <input type="text">
+      <!-- text 入力欄 -->
+      <button v-on:click="addItem">Add</button>
+      <!-- Addボタン -->
+      <!-- ボタンがクリックされたときに呼び出すメソッド名を記述する -->
+    </form>
 
   </div>
 
   <script src="https://unpkg.com/vue@3.1.5"></script>
+  <!-- Vue.jsを読み込んでいる -->
+  <!-- src 【source attribute】 -->
+  <!-- src属性とは、HTMLの要素（タグ）の中で設定することができる属性（attribute）の一つで、その場所に外部から読み込む資源（ファイルなど）の所在を記述するもの。通常はファイルのあるURLやパスを記述する。 -->
   <script src="js/main.js"></script>
+  <!-- main.jsを読み込んでいる -->
+  <!-- scriptの意味は脚本 -->
 </body>
 </html>
   

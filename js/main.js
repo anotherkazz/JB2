@@ -1,17 +1,5 @@
 'use strict'
 
-// ディレクティブとは、
-// v-で始まる特別な属性のこと
-
-// directivve（指令）という名前の通り、Vue.jsに
-// 何らかの指示を行う仕組みのこと
-
-// v-bind
-// v-if
-// v-show
-// v-for
-// v-on
-// v-model
 
 {
 
@@ -28,13 +16,16 @@
 
   const vue = Vue.createApp({
     data: () => ({
-      message: 'Hello Vue.js'
+   
     }),
-    
+    // ボダンが押されたときのイベントハンドラ　メソッド
+    methods:　{
+      addItem: function(event) {
+      console.log('Clicked!')
+    }
+  }
   })
-  vue.component('hello-component', {
-    template: '<p>Hello!</p>'
-  })
+ 
   vue.mount('#basic-event')
 
   // アロー関数に()はいるのか？
