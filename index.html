@@ -27,6 +27,11 @@
       <!-- Addボタン -->
       <!-- ボタンがクリックされたときに呼び出すメソッド名を記述する -->
     </form>
+    <ul>
+      <li v-for="todo in todos">
+        <span>{{ todo.item }}</span>
+      </li>
+    </ul>
     <pre>{{ $data }}</pre>
   </div>
 
