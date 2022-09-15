@@ -22,11 +22,15 @@
     // ボダンが押されたときのイベントハンドラ　メソッド
     methods: {
       addItem: function(event) {
-      console.log('Clicked!')
+      // console.log('Clicked!')
+      if(this.newItem === '') return
+      // 入力が空文字だったらそこで、処理を中断する
       let todo = {
         item: this.newItem
       }
       this.todos.push(todo)
+      this.newItem = ''
+      // ボタンを押した後、テキストをクリアさせる。
     }
   }
   })
