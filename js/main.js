@@ -26,7 +26,9 @@
       if(this.newItem === '') return
       // 入力が空文字だったらそこで、処理を中断する
       let todo = {
-        item: this.newItem
+        item: this.newItem,
+        isDone: false
+      
       }
       this.todos.push(todo)
       this.newItem = ''
