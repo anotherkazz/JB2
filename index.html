@@ -19,7 +19,6 @@
       <option
         v-for="statusItem in statusItems"
         :value="statusItem"
-       
         :key="statusItem"
        
       >
@@ -29,6 +28,20 @@
       </option>
     </select>
     <button>追加</button>
+
+    <div class="filter">
+      <label for="filter">フィルター：</label>
+      <select id="filter">
+        <option
+        v-for="filterItem in filterItems"
+        :value="filterItem"
+        :key="filterItem"
+        >
+        {{ filterItem }}
+        </option>
+
+      </select>
+    </div>
 
     <ul>
       <li>
