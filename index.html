@@ -41,6 +41,21 @@
 
       </li>
     </ul>
+
+    <div>
+      <input type="text" placeholder="タイトル" />
+      <select>
+        <option
+          v-for="statusItem in statusItems"
+          :value="statusItem"
+          :key="statusItem"
+        >
+        {{ statusItem }}
+      </option>
+      </select> 
+      <button>保存</button>
+      <button>キャンセル</button>
+    </div>
   </div>
 
   <script src="https://unpkg.com/vue@3.1.5"></script>
