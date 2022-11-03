@@ -57,7 +57,7 @@
     <ul  style="list-style: disc;">
       <li v-for="(todo, index) in todos" :key="todo.id">
         （{{ todo.status }}）{{ todo.title }}
-        <button  @click="editTodo">
+        <button  @click="editTodo(todo.id)">
           編集
         </button>
         <button  @click="deleteTodo(index)">

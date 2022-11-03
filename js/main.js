@@ -49,8 +49,10 @@
       deleteTodo(index) {
         this.todos.splice(index, 1)
       },
-      editTodo() {
+      editTodo(id) {
+        this.editedTodo = { ...this.todos.find((todo) => todo.id === id) }
         this.isShowEditForm = true
+        
       },
       // 問題3. 編集フォームを非表示するように実装しよう
       updateTodo() {
