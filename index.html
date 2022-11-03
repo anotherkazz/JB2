@@ -57,7 +57,7 @@
     <ul  style="list-style: disc;">
       <li v-for="(todo, index) in todos" :key="todo.id">
         （{{ todo.status }}）{{ todo.title }}
-        <button>
+        <button  @click="editTodo">
           編集
         </button>
         <button  @click="deleteTodo(index)">
@@ -67,7 +67,7 @@
       </li>
     </ul>
 
-    <div>
+    <div class="edit-form" v-show="isShowEditForm">
       <input type="text" placeholder="タイトル" />
       <select>
         <option
@@ -78,8 +78,8 @@
         {{ statusItem }}
       </option>
       </select> 
-      <button>保存</button>
-      <button>キャンセル</button>
+      <button @click="updateTodo">保存</button>
+      <button @click="isShowEditForm = false">キャンセル</button>
     </div>
   </div>
 

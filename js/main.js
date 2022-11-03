@@ -31,7 +31,8 @@
         title: '',
         status: '未着手',
         id: 4
-      }
+      },
+      isShowEditForm: false     
       
      
     }),
@@ -47,7 +48,14 @@
       },
       deleteTodo(index) {
         this.todos.splice(index, 1)
-      }      
+      },
+      editTodo() {
+        this.isShowEditForm = true
+      },
+      // 問題3. 編集フォームを非表示するように実装しよう
+      updateTodo() {
+        this.isShowEditForm = false
+      }            
       
 
     }  
