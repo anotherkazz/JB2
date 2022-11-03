@@ -26,20 +26,30 @@
           status: '完了',
           id: 3
         }
-      ]
+      ],
+      newTodo: {
+        title: '',
+        status: '未着手',
+        id: 4
+      }
+      
      
     }),
     // ボダンが押されたときのイベントハンドラ　メソッド
     methods: {
+      addTodo() {
+        if (this.newTodo.title) {
+          this.todos.push({ ...this.newTodo })
+          this.newTodo.title = ''
+          this.newTodo.status = '未着手'
+          this.newTodo.id++
+        }
+      }
       
-      
-      
-    
- 
 
- }  
+    }  
   })
  
   vue.mount('#basic-event')
 
-}S 
+}
