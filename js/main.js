@@ -44,7 +44,10 @@
           this.newTodo.status = '未着手'
           this.newTodo.id++
         }
-      }
+      },
+      deleteTodo(index) {
+        this.todos.splice(index, 1)
+      }      
       
 
     }  

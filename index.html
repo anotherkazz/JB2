@@ -55,12 +55,12 @@
     </select>
 
     <ul  style="list-style: disc;">
-      <li v-for="todo in todos" :key="todo.id">
+      <li v-for="(todo, index) in todos" :key="todo.id">
         （{{ todo.status }}）{{ todo.title }}
         <button>
           編集
         </button>
-        <button>
+        <button  @click="deleteTodo(index)">
           削除
         </button>
 
