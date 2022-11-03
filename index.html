@@ -38,13 +38,25 @@
         :key="filterItem"
         >
         {{ filterItem }}
-        </option>
-
-      </select>
-    </div>
+      </option>
+      
+    </select>
+  </div>
+  <div class="filter">
+    <label for="sort">ID:</label>
+    <select id="sort">
+      <option
+        v-for="sortItem in sortItems"
+        :value="sortItem"
+        :key="sortItem"
+      >
+      {{ sortItem }}
+    </option>
+    </select>
 
     <ul>
       <li>
+        （ステータス）タイトル
         <button>
           編集
         </button>
